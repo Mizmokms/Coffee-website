@@ -1,0 +1,148 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background: #fffaf5;
+}
+
+/* NAVBAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #3e2723;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #d7a86e;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(62,39,35,0.7), rgba(62,39,35,0.7)),
+              url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') center/cover;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero span {
+  color: #d7a86e;
+}
+
+.hero p {
+  margin-top: 10px;
+}
+
+/* MENU */
+.services {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* EXPERIENCE */
+.process {
+  background: #6d4c41;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.process-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.process-card {
+  background: white;
+  color: black;
+  width: 260px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.process-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #3e2723;
+  color: white;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .hero {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .card,
+  .process-card {
+    width: 90%;
+  }
+}
