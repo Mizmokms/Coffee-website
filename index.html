@@ -5,47 +5,64 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Coffee House</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
 
 <header>
   <div class="logo">☕ Coffee House</div>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Menu</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<section class="hero">
-  <div>
-    <h1><span>Fresh Coffee</span> Everyday</h1>
-    <p>Start your day with the perfect cup</p>
+<section id="home" class="hero reveal">
+  <div class="hero-slider">
+    <div class="hero-slide active">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Coffee 1">
+    </div>
+    <div class="hero-slide">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Coffee 2">
+    </div>
+    <div class="hero-slide">
+      <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735" alt="Coffee 3">
+    </div>
+    <div class="hero-text">
+      <h1><span>Fresh Coffee</span> Everyday</h1>
+      <p>Start your day with the perfect cup</p>
+    </div>
   </div>
 </section>
 
-<section class="services">
+<section id="menu" class="services reveal">
   <h2>OUR MENU</h2>
   <div class="cards">
-    <div class="card">
+    <div class="card" data-description="Espresso is a concentrated coffee shot, strong and bold, perfect to wake you up in the morning.">
       <h3>Espresso</h3>
       <p>Strong and bold coffee shot</p>
+      <div class="card-description"></div>
     </div>
-    <div class="card">
+    <div class="card" data-description="Latte combines smooth steamed milk with rich espresso for a creamy coffee experience.">
       <h3>Latte</h3>
       <p>Smooth milk with rich espresso</p>
+      <div class="card-description"></div>
     </div>
-    <div class="card">
+    <div class="card" data-description="Cappuccino balances espresso, steamed milk, and foam for a perfect morning cup.">
       <h3>Cappuccino</h3>
       <p>Perfect balance of foam & coffee</p>
+      <div class="card-description"></div>
     </div>
   </div>
 </section>
 
-<section class="process">
+<section id="experience" class="process reveal">
   <h2>OUR EXPERIENCE</h2>
   <div class="process-cards">
     <div class="process-card">
@@ -63,9 +80,16 @@
   </div>
 </section>
 
+<section id="contact" class="contact reveal">
+  <h2>CONTACT US</h2>
+  <p>Email: coffee@email.com</p>
+</section>
+
 <footer>
-  <p>© 2026 Coffee House ☕</p>
+  <p>© 2026 Coffee House</p>
 </footer>
+
+<script src="/js/script.js"></script>
 
 </body>
 </html>
