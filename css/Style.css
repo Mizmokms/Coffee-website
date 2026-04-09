@@ -2,3 +2,13 @@ html{
     background-color: bisque;
     scroll-behavior: smooth;
 }
+.fixed-caption{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+}
