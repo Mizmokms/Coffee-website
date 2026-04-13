@@ -1,6 +1,5 @@
 html{
-    background-color: bisque;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
 }
 .fixed-caption{
     position: absolute;

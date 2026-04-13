@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="/css/Style.css">
 <link rel="stylesheet" href="/css/Bootstrap.css">
 </head>
-<body>
+<body class="bg-secondary">
   <!-- Navbar -->
 <nav class="navbar bg-dark border-bottom border-body fixed-top sticky-top" data-bs-theme="dark">
   <div class="container-fluid">
@@ -60,21 +60,21 @@
 <!-- card group -->
 <div class="card-group d-flex flex-row m-5">
 <!-- card 1 -->
- <div class="card col-md-3 p-2" style="width: 18rem;">
+ <div class="card col-md-3 p-2 bg-secondary" style="width: 18rem;">
   <img class="card-img-top p-5" src="/Images/coffee 5.png" class="card-img-top" alt="...">
   <div class="card-body">
     <p class="card-text">Latte: Espresso with a large amount of steamed milk and a small layer of foam.</p>
   </div>
 </div>
 <!-- card 2 -->
-<div class="card col-md-3 p-2" style="width: 18rem;">
+<div class="card col-md-3 p-2 bg-secondary" style="width: 18rem;">
   <img class="card-img-top p-5" src="/Images/coffee 6.png" alt="...">
   <div class="card-body">
     <p class="card-text">Cold Brew: Coffee steeped in cold water for a long period, resulting in low acidity.</p>
   </div>
 </div>
 <!-- card 3 -->
-<div class="card col-md-3 p-2" style="width: 18rem;">
+<div class="card col-md-3 p-2 bg-secondary" style="width: 18rem;">
   <img class="card-img-top p-5" src="/Images/coffee-cup.png" alt="...">
   <div class="card-body">
     <p class="card-text">Espresso: A concentrated, 1-ounce shot of coffee.</p>
@@ -82,15 +82,42 @@
 </div>
 </div>
 <!-- menu -->
-<div class="d-flex justify-content-center m-2" id="menu-section">
-  <div class="list-group w-75">
-    <a href="" class="list-group-item list-group-item-action">Order: Latte</a>
-    <a href="" class="list-group-item list-group-item-action">Order: Cold brew</a>
-    <a href="" class="list-group-item list-group-item-action">Order: Espresso</a>
+<div class="d-flex justify-content-center m-2 bg-secondary" id="menu-section">
+  <div class="list-group w-75 bg-secondary">
+    <a href="" class="list-group-item list-group-item-action bg-secondary">Order: Latte</a>
+    <a href="" class="list-group-item list-group-item-action bg-secondary">Order: Cold brew</a>
+    <a href="" class="list-group-item list-group-item-action bg-secondary">Order: Espresso</a>
   </div>
 </div>
+<!-- About us -->
+<div class="m-5 d-flex flex-row">
+  <div class="card m-2 bg-secondary">
+    <img src="/Images/card1.webp" class="card-img-top" alt="...">
 
+   <div class="card-body">
+     <h5 class="card-title">Where we can be found at?</h5>
+      <p class="card-text">you can find us here at</p>
+      <a href="#" class="btn btn-primary">Google maps</a>
+    </div>
+  </div>
+  <div class="card m-2 bg-secondary">
+   <img src="/Images/card2.png" class="card-img-top" alt="...">
 
+   <div class="card-body">
+     <h5 class="card-title">Social media?</h5>
+     <p class="card-text">This is the link to our Instagram</p>
+     <a href="#" class="btn btn-primary">Instagram</a>
+    </div>
+  </div>
+  <div class="card m-2 bg-secondary">
+    <img src="/Images/card 3.jpg" class="card-img-top" alt="...">
+
+    <div class="card-body">
+      <h5 class="card-title">Workers?</h5>
+      <p class="card-text">We only hire certified workers with specific qualifications</p>
+   </div>
+  </div>
+</div>
 
 <div class="m-5 d-flex flex-row">
   <!-- contact us -->
@@ -113,6 +140,7 @@
     <label for="exampleFormControlTextarea1" class="form-label">suggestions</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
+  <button type="submit" class="btn btn-success">Submit</button>
 </div>
 </div>
 
